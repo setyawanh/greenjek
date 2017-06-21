@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.greenjek.MainActivity">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/buttonmotor"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="openMotor"
+            android:scaleType="fitCenter"
+            android:src="@drawable/motor"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+        <ImageButton
+            android:id="@+id/buttonmobil"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="openMobil"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mobil"
+            app:layout_constraintLeft_toRightOf="@+id/buttonmotor"
+            app:layout_constraintRight_toLeftOf="@+id/buttondelivery"
+            app:layout_constraintTop_toBottomOf="@+id/slider"
+            app:layout_constraintHorizontal_bias="0.504" />
+
+        <ImageButton
+            android:id="@+id/buttondelivery"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="openDelivery"
+            android:scaleType="fitCenter"
+            android:src="@drawable/delivery"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+        <ImageButton
+            android:id="@+id/buttonkurir"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="openKurir"
+            android:scaleType="fitCenter"
+            android:src="@drawable/kurir"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonmotor" />
+
+        <ImageButton
+            android:id="@+id/buttonpijat"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="openPijat"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pijat"
+            app:layout_constraintLeft_toRightOf="@+id/buttonkurir"
+            app:layout_constraintRight_toLeftOf="@+id/buttontentang"
+            app:layout_constraintTop_toBottomOf="@+id/buttonmobil"
+            app:layout_constraintHorizontal_bias="0.504" />
+
+        <ImageButton
+            android:id="@+id/buttontentang"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="openTentang"
+            android:scaleType="fitCenter"
+            android:src="@drawable/info"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttondelivery" />
+
+        <ImageView
+            android:id="@+id/imgIklan"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonpijat"
+            android:layout_marginStart="8dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

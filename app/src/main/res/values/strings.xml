@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GreenJek</string>
+    <string name="btnSendWhatsApp">Order</string>
+    <string name="txtNama">Nama</string>
+    <string name="txtHP">Nomor HP</string>
+    <string name="txtDari">Dari</string>
+    <string name="txtTujuan">Tujuan</string>
+    <string name="txtAlamat">Alamat</string>
+    <string name="txtMenu">Menu / Barang</string>
+    <string name="txtOutlet">Outlet</string>
+    <string name="txtJamTerapi">Jam Terapi (minimal 30 menit sebelumnya)</string>
+    <string name="txtJamMotor">Jam (minimal 30 menit sebelumnya)</string>
+    <string name="txtJamMobil">Jam (minimal 60 menit sebelumnya)</string>
+    <string name="txtJenis">Jenis Barang</string>
+    <string name="txtAlamatAmbil">Alamat Ambil</string>
+    <string name="txtPengirim">Nama Pengirim</string>
+    <string name="txtHPPengirim">Nomor HP Pengirim</string>
+    <string name="txtAlamatAntar">Alamat Antar</string>
+    <string name="txtPenerima">Nama Penerima</string>
+    <string name="txtHPPenerima">Nomor HP Penerima</string>
+    <string name="txtKeterangan">Keterangan</string>
+    <string name="txtPowered">Powered by WhatsApp</string>
+    <string name="txtKembali">Kembali</string>
+    <string name="radioPria">Pria</string>
+    <string name="radioWanita">Wanita</string>
+    <string name="txtTerapis">Terapis</string>
+
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_motor">Order Motor</string>
+    <string name="title_activity_mobil">Order Mobil</string>
+    <string name="title_activity_help">Bantuan</string>
+    <string name="title_activity_tentang">Tentang</string>
+</resources>
